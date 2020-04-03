@@ -2,7 +2,7 @@ include: "user_properties_generated*"
 include: "events_generated*"
 
 view: events {
-  sql_table_name: `cyber-media-85b59.analytics_220460264.events_`  ;;
+  sql_table_name: `cyber-media-85b59.analytics_220460264.events_*`  ;;
 
   extends: [events_generated,user_properties_generated]
 
