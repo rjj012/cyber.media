@@ -328,7 +328,7 @@ view: events {
   }
 
   measure: number_of_events {
-    label: "Pageviews"
+    label: "Event Count"
     type: count
     drill_fields: [event_name]
   }
