@@ -312,6 +312,7 @@ view: events {
 
   dimension: user_pseudo_id {
     description: "The pseudonymous id (e.g., app instance ID) for the user."
+    primary_key: yes
     type: string
     sql: ${TABLE}.user_pseudo_id ;;
   }
@@ -327,6 +328,7 @@ view: events {
   }
 
   measure: number_of_events {
+    label: "Pageviews"
     type: count
     drill_fields: [event_name]
   }
