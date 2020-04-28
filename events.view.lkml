@@ -333,6 +333,15 @@ view: events {
     drill_fields: [event_name]
   }
 
+  measure: pageviews {
+    label: "Pageviews"
+    type: sum
+    filters: {
+      field: event_name
+      value: "page_view"
+    }
+  }
+
 # Retention
 
   dimension_group: current {
