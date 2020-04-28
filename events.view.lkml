@@ -335,11 +335,8 @@ view: events {
 
   measure: pageviews {
     label: "Pageviews"
-    type: sum
-    filters: {
-      field: event_name
-      value: "page_view"
-    }
+    type: sum sql: ${TABLE}.event_name ;;
+    filters: [event_name: "page_view"]
   }
 
 # Retention
