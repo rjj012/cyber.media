@@ -240,6 +240,7 @@ view: events {
     group_label: "User Location"
     description: "The region from which events were reported, based on IP address."
     type: string
+    drill_fields: [city]
     sql: ${geo}.region ;;
   }
 
